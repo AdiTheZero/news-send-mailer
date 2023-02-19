@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-let PORT = 5000;
+let PORT = 80;
 
 const sendMail = require("./controllers/sendMail");
 app.get("/", sendMail);
