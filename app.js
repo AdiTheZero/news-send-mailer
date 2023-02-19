@@ -15,7 +15,7 @@ app.get("/", sendMail);
 
 const start = async () => {
   try {
-    app.listen(PORT, () => {
+    app.listen(PORT,"0.0.0.0", () => {
       console.log(`I am live in port no.  ${PORT}`);
      
     });
